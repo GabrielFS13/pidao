@@ -9,11 +9,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    transition: 2s;
+    height: 90vh;
+    transition: .8s;
 }
 
-button{
+div{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
     width: 100px;
     height: 100px;
     font-size: 2em;
@@ -23,17 +26,31 @@ button{
     background-repeat: no-repeat;
     background-size: cover;
     background-image: none;
+    box-shadow: none;
+    border: 1px outset;
+}
 
+h2{
+    color: dimgray;
+    display: none;
+    text-align: center;
 }
 
 .white-mode{
-    background-color: #fff;
+    background-color: #f6f6f6;
 }
 
 .dark-mode{
     background-color: #000;
 }
 
-.dark-mode button{
+.dark-mode div{
     background-image: url('../img/pidao.jpg');
+}
+
+.dark-mode h2{
+    position: absolute;
+    top: 15px;
+    transform: translate(repeat(-50%));
+    display: block;
 }
