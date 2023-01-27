@@ -1,0 +1,33 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: 2s;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.white-mode{
+    background-color: #fff;
+}
+
+.dark-mode{
+    background-color: #000;
+}
