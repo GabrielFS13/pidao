@@ -22,6 +22,8 @@ button{
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: none;
+
 }
 
 .white-mode{
@@ -30,4 +32,8 @@ button{
 
 .dark-mode{
     background-color: #000;
+}
+
+.dark-mode button{
+    background-image: url('../img/pidao.jpg');
 }

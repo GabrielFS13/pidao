@@ -10,13 +10,11 @@ btn.addEventListener("click", function(){
 
 function trocaBg(){
     if(controle){
-        btn.innerText = 'Pedir'
-        btn.style.backgroundImage = 'none'
+        btnText('Pedir')
         controle = false
         transicao()
     }else{
-        btn.innerText = ''
-        btn.style.backgroundImage = 'url("img/pidao.jpg")'
+        btnText('')
         controle = true
         transicao()
     }
@@ -24,4 +22,9 @@ function trocaBg(){
 
 function transicao(){
     document.body.classList.toggle("dark-mode")
+}
+
+function btnText(text){
+    btn.innerText = text
+
 }
