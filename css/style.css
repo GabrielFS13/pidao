@@ -32,8 +32,12 @@ div{
 
 h2{
     color: dimgray;
-    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    transform: translate(repeat(-50%));
     text-align: center;
+    transition: 1s;
 }
 
 .white-mode{
@@ -49,8 +53,5 @@ h2{
 }
 
 .dark-mode h2{
-    position: absolute;
-    top: 15px;
-    transform: translate(repeat(-50%));
-    display: block;
+    opacity: 1;;
 }
